@@ -52,6 +52,10 @@ public class AuthController {
 		userRepository.save(user);
 		return new ResponseEntity("user added",HttpStatus.OK);
 	}
+	@GetMapping("/get1")
+	 public String get1() {
+		 return "hi";
+	 }
 	@GetMapping("/get")
 	 public String get() {
 		 return "hi";
